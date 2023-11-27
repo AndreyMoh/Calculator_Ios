@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TestApp3</string>
+    <string name="test_button_text">Click</string>
+    <string name="base_title">Calculator</string>
+    <string name="delete_sign">C</string>
+    <string name="plus_minus_sign">+/-</string>
+    <string name="percent_sign">%</string>
+    <string name="divide_sign">/</string>
+    <string name="multiple_sign">X</string>
+    <string name="subtract_sign">-</string>
+    <string name="sum_sign">+</string>
+    <string name="equal_sign">=</string>
+    <string name="dot_sign">.</string>
+    <string name="one_sign">1</string>
+    <string name="two_sign">2</string>
+    <string name="three_sign">3</string>
+    <string name="fore_sign">4</string>
+    <string name="five_sign">5</string>
+    <string name="six_sign">6</string>
+    <string name="seven_sign">7</string>
+    <string name="eight_sign">8</string>
+    <string name="nine_sign">9</string>
+    <string name="zero_sign">0</string>
+
+</resources>
