@@ -117,7 +117,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return false;
             if (Math.abs(e2.getX() - e1.getX()) > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_MIN_VELOCITY) {
                 if (!Objects.equals(numb, "")) {
-                    numb = String.valueOf(resTextView.getText()).substring(0, String.valueOf(resTextView.getText()).length() - 1);
+                    if (!Objects.equals(numb, ""))
+                        numb = String.valueOf(resTextView.getText()).substring(0, String.valueOf(resTextView.getText()).length() - 1);
+                    else numb = "0";
                 }
                 resTextView.setText(numb);
             }
@@ -278,22 +280,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case SUBTRACT:
                 res = subtract(a, b);
                 subtract_button.setEnabled(true);
-                subtract_button.setTextColor(colorOrange);
+                subtract_button.setTextColor(colorWhite);
                 break;
             case SUM:
                 res = sum(a, b);
                 sum_button.setEnabled(true);
-                sum_button.setTextColor(colorOrange);
+                sum_button.setTextColor(colorWhite);
                 break;
             case DIVIDE:
                 res = divide(a, b);
                 divide_button.setEnabled(true);
-                divide_button.setTextColor(colorOrange);
+                divide_button.setTextColor(colorWhite);
                 break;
             case MULTIPLE:
                 res = multiple(a, b);
                 multiple_sign_button.setEnabled(true);
-                multiple_sign_button.setTextColor(colorOrange);
+                multiple_sign_button.setTextColor(colorWhite);
                 break;
             case NULLACTION:
                 break;
